@@ -1,0 +1,73 @@
+/* graph-dd-container */
+.graph-dd-container {
+    width: 683px;
+    background-color: $app-white;
+    position: absolute;
+    left: -100px;
+    top: 58px;
+    display: none;
+    z-index: 99991;
+    @media (min-width: 768px) and (max-width: 1359px) {
+        width: 550px;
+        left: -200px;
+    }
+    &+.bg-overlay {
+        z-index: 9999;
+    }
+    .graph-selector {
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 0;
+        }
+        li {
+            display: block;
+            border-bottom: 1px solid #EEEEEE;
+            width: 100%;
+            a {
+                @include fontStyle(15px, 600, #40A0FF);
+                display: flex;
+                padding: 12px 30px;
+                svg {
+                    margin-left: 18px;
+                }
+            }
+            &:last-child {
+                border-color: $app-input-border;
+            }
+        }
+        .selected {
+            .checked-icon {
+                display: flex;
+            }
+        }
+        .checked-icon {
+            display: none;
+        }
+    }
+}
+
+.graph-notifications {
+    padding-left: 20px;
+    max-height: 335px;
+    overflow-y: auto;
+    .new-notification {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 10px 18px;
+        border-bottom: 1px solid #EEEEEE;
+        align-items: center;
+    }
+    .date, .time {
+        @include fontStyle(13px, 400, $app-dark-grey);
+        padding-right: 10px;
+    }
+    .time {
+        padding-right: 15px;
+    }
+    .scenario {
+        @include fontStyle(15px, 400, $app-light-blue);
+    }
+}

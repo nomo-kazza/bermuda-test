@@ -1,0 +1,266 @@
+/* style for top-chart-area */
+.top-chart-area {
+    background-color: #328CA5;
+    height: 340px;
+    @media only screen and (min-width: 768px) and (max-width: 1359px) {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    .inner-top-chart-area {
+        @include fixedContent(1210px);
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0 20px;
+        /*-- media 768px to 1359px ---*/
+        @media (min-width: 768px) and (max-width: 1359px) {
+            max-width: 100%;
+            padding: 25px 35px 0;
+        }
+    }
+}
+.center-gauge-chart-container {
+    display: flex;
+    justify-content: space-around;
+    /*-- media 768px to 1359px ---*/
+    &.hidden-tablet {
+        display: flex;
+    }
+    @media (min-width: 768px) and (max-width: 1359px) {
+        min-height: 236px;
+        min-width: 343px;
+        justify-content: center;
+        &.hidden-tablet {
+            display: none;
+        }
+    }
+}
+/*-- media 768px to 1359px ---*/
+@media (min-width: 768px) and (max-width: 1359px) {
+    .right-table-container {
+        position: relative;
+    }
+    .gauge-chart-selector,
+    .gauge-chart-selector span {
+        width: 47px;
+        height: 30px;
+        border-radius: 13px;
+        background-color: rgba(92, 118, 118, 0.25);
+        position: absolute;
+        bottom: 8px;
+        left: 21%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent;
+        z-index: 7;
+        &.active, &:hover {
+            background-color: transparent;
+            border: 1px solid $app-white;
+            background: transparent;
+            svg {
+                opacity: 1;
+            }
+            span {
+                display: none;
+            }
+        }
+
+    }
+    .gauge-chart-selector {
+        &.active, &:hover {
+            background-color: transparent;
+            border: 1px solid $app-white;
+            background: transparent;
+            svg {
+                opacity: 1;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+    .gauge-chart-selector span {
+        mix-blend-mode: multiply;
+        z-index: 0;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+/* bermuada table */
+.right-table-container {
+    min-width: 415px;
+    /*-- media 768px to 1359px ---*/
+    @media (min-width: 768px) and (max-width: 1359px) {
+        min-width: 330px;
+        width: 50%;
+    }
+}
+.bermuda-table {
+    width: 100%;
+    th, td {
+        @include fontStyle(13px, 400, $app-white);
+        text-align: left;
+        vertical-align: middle;
+    }
+    th {
+        opacity: 0.5;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.25);
+        padding: 15px 0 15px 0;
+        &:nth-child(1) {
+            width: 16%;
+        }
+        &:nth-child(2) {
+            width: 30%;
+        }
+        &:nth-child(3) {
+            width: 20%;
+        }
+        &:nth-child(4) {
+            width: 18%;
+        }
+        &:last-child {
+            display: none;
+        }
+    }
+    td {
+        padding: 5px 0 6px;
+        position: relative;
+        &:first-child {
+            span {
+                display: flex;
+                width: 30px;
+                height: 2px;
+                background-color: #3F9FFF;
+                margin-left: 5px;
+            }
+        }
+        &.delta-td {
+            color: #FFD800;
+            display: none;
+            .circle-indicator {
+                width: 9px;
+                height: 9px;
+                border: 1px solid #FFD800;
+                border-radius: 50%;
+                display: inline-block;
+                margin-left: 5px;
+                &.checked {
+                    background-color: #FFD800;
+                }
+
+            }
+        }
+    }
+    tr:nth-child(2n) {
+        td {
+            background-color: rgba(161, 203, 226, 0.07);
+        }
+    }
+    /*-- media 768px to 1359px ---*/
+    @media (min-width: 768px) and (max-width: 1359px) {
+        th {
+            &:last-child {
+                display: none;
+            }
+        }
+        td {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+#bermuda-table-graph2 {
+    th:nth-child(2) {
+        width: 40%;
+    }
+}
+
+/* delta radio input style */
+.delta-radio-container {
+    display: inline-block;
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    input[type="radio"] {
+        display:none;
+    }
+    input[type="radio"] + label {
+        display: inline-block;
+    }
+    input[type="radio"] + label span {
+        display: flex;
+        width: 9px;
+        height: 9px;
+        vertical-align: middle;
+        cursor:pointer;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: relative;
+        border: 1px solid $app-yellow;
+    }
+
+    input[type="radio"] + label span {
+        background-color: transparent;
+    }
+
+    input[type="radio"]:checked + label span {
+        background-color: $app-yellow;
+    }
+
+    input[type="radio"] + label span,
+    input[type="radio"]:checked + label span {
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+}
+
+/* table pagination */
+.pager {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    @media (min-width: 768px) and (max-width: 1359px) {
+        padding-left: 50px;
+    }
+    .page-number, span {
+        cursor: pointer;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(92, 118, 118, 0.25);
+        @include fontStyle(12px, 600, rgba(255, 255, 255, 0.5));
+        border-radius: 50%;
+        position: relative;
+        &:hover, &.active {
+            border: 1px solid $app-white;
+            color: $app-white;
+            background: transparent;
+            span {
+                display: none;
+            }
+        }
+        span {
+            mix-blend-mode: multiply;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            margin: 0;
+            border: none;
+        }
+    }
+}
+

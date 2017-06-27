@@ -1,0 +1,39 @@
+{
+    "parameters": [
+        {
+            "id": 1,
+            "paramName": "Annual Car Production",
+            "min": 0,
+            "max": 1000000,
+            "currentValue": 410000
+        },
+        {
+            "id": 2,
+            "paramName": "Sedan Percent",
+            "min": 0,
+            "max": 100,
+            "currentValue": 67
+        },
+        {
+            "id": 3,
+            "paramName": "Luxury Sedan Percent",
+            "min": 0,
+            "max": 100,
+            "currentValue": 6
+        },
+        {
+            "id": 4,
+            "paramName": "Luxury SUV Percent",
+            "min": 0,
+            "max": 100,
+            "currentValue": 90
+        },
+        {
+            "id": 5,
+            "paramName": "SUV Percent",
+            "min": 0,
+            "max": 100,
+            "currentValue": 21
+        }
+    ]
+}

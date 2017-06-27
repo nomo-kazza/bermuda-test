@@ -1,0 +1,199 @@
+.jq-export-modal-container,
+.jq-save-modal-container,
+.jq-load-modal-container,
+.jq-add-modal-container,
+.bg-overlay {
+    display: none;
+}
+.bermuda-modal-container.jq-add-modal-container {
+    width: 705px;
+}
+.bermuda-modal-container {
+    background-color: $app-white;
+    width: 590px;
+    position: fixed;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-sizing: border-box;
+    z-index: 99999;
+    @media (min-width: 768px) and (max-width: 1359px) {
+        position: absolute;
+    }
+    .bermuda-modal-header {
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #EDF0F0;
+        padding: 10px 46px;
+        box-sizing: border-box;
+        .modal-title {
+            @include fontStyle(14px, 600, $app-dark-grey);
+            text-transform: uppercase;
+        }
+        .close-icon {
+            cursor: pointer;
+            display: flex;
+        }
+    }
+    .bermuda-modal-content {
+        .align-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .scenario-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 52px 46px 0;
+            p {
+                @include fontStyle(13px, 400, $app-dark-grey);
+            }
+            .time-date {
+                display: flex;
+                span {
+                    display: flex;
+                    @include fontStyle(13px, 400, $app-light-grey);
+                }
+                .time {
+                    margin-left: 12px;
+                }
+            }
+        }
+        .senario-name {
+            @include fontStyle(15px, 400, $app-light-blue);
+            padding: 5px 10px;
+            margin: 18px 46px 19px;
+            background-color: #F6F7F7;
+        }
+
+        .graph-type {
+            @extend .align-center;
+            @include fontStyle(14px, 600, $app-dark-grey);
+            padding: 40px 20px 10px;
+            text-transform: uppercase;
+        }
+        .file-name {
+            @extend .graph-type;
+            @include fontStyle(14px, 400, $app-dark-grey);
+            padding: 20px 20px 14px;
+        }
+    }
+    .modal-btn {
+        justify-content: center;
+        display: flex;
+        margin: 1px 10px 68px;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 13px;
+            text-transform: uppercase;
+            background-color: $app-light-blue;
+            @include fontStyle(13px, 600, $app-white);
+            width: 112px;
+            height: 30px;
+        }
+    }
+    .download-btn {
+        border-bottom: 1px solid $app-light-grey;
+    }
+    .download-btn, .send-btn {
+        padding-bottom: 52px;
+        margin: 5px 40px 0 40px;
+        a {
+            width: 190px;
+            svg {
+                margin-right: 14px;
+            }
+        }
+    }
+    .or-share {
+        margin: 0 60px 15px;
+        p {
+            @extend .graph-type;
+        }
+        input {
+            width: 100%;
+            border: none;
+            background-color: #F6F7F7;
+            padding: 6px 15px;
+            margin-top: 15px;
+            box-sizing: border-box;
+            @include fontStyle(15px, 400, $app-dark-grey);
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                @include fontStyle(15px, 400, $app-light-blue);
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                @include fontStyle(15px, 400, $app-light-blue);
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                @include fontStyle(15px, 400, $app-light-blue);
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                @include fontStyle(15px, 400, $app-light-blue);
+            }
+        }
+    }
+
+    /* notifiction */
+    .graph-notifications {
+        padding: 0 25px;
+        max-height: 420px;
+        overflow-y: auto;
+        .new-notification {
+            padding: 15px 10px;
+            position: relative;
+        }
+    }
+    .load-header {
+        @extend .flexAlignItems;
+        justify-content: flex-start;
+        @include fontStyle(14px, 600, rgba(101, 101, 101, 0.5));
+        text-transform: uppercase;
+        padding: 23px 30px 22px;
+        border-bottom: 1px solid $app-light-grey;
+        .date {
+            padding-right: 40px;
+        }
+        .time {
+            padding-right: 22px;
+        }
+    }
+    .add-header {
+        @extend .flexAlignItems;
+        justify-content: flex-start;
+        padding: 23px 40px 22px;
+        border-bottom: 1px solid $app-light-grey;
+        .add-new-graph {
+            @include fontStyle(13px, 600, $app-light-blue);
+            text-transform: uppercase;
+            padding-right: 20px;
+        }
+        .default {
+            @include fontStyle(13px, 400, $app-dark-grey);
+        }
+    }
+    .load-from {
+        @include fontStyle(13px, 600, $app-light-blue);
+        text-transform: uppercase;
+        padding-right: 20px;
+    }
+    .delete-row {
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        cursor: pointer;
+    }
+}
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99991;
+}

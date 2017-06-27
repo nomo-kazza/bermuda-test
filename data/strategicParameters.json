@@ -1,0 +1,32 @@
+{
+    "parameters": [
+        {
+            "id": 1,
+            "paramName": "Profit per Car",
+            "min": 24,
+            "max": 200,
+            "currentValue": 130
+        },
+        {
+            "id": 2,
+            "paramName": "Detroit Percent",
+            "min": 0,
+            "max": 100,
+            "currentValue": 75
+        },
+        {
+            "id": 3,
+            "paramName": "Detroit Plant P. Rate",
+            "min": 0,
+            "max": 1,
+            "currentValue": 0.85
+        },
+        {
+            "id": 4,
+            "paramName": "Mexico City Plant P. Rate",
+            "min": 0,
+            "max": 1,
+            "currentValue": 0.7
+        }
+    ]
+}

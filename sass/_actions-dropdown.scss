@@ -1,0 +1,61 @@
+/* actions drop down container */
+.actions-dd-container {
+    $padding: 22px 10px;
+    position: relative;
+    .actions-dd-content {
+        display: none;
+        background-color: $app-white;
+        width: 180px;
+        position: absolute;
+        top: 45px;
+        left: -35px;
+        text-transform: uppercase;
+        z-index: 89;
+        text-align: center;
+        .actions-dd-head {
+            @include fontStyle(14px, 600, $app-light-grey);
+            padding: $padding;
+            border-bottom: 1px solid #F0F0F0;
+        }
+        .actions-dd-foot {
+            padding: 11px 10px 12px;
+        }
+        .hold-values-btn {
+            @include fontStyle(14px, 600, #40A0FF);
+            display: block;
+            border: 1px solid #5997D1;
+            padding: 10px;
+            border-radius: 14px;
+            width: 146px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            &:hover {
+                color: #5D98D1;
+                svg {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    li {
+        padding: $padding;
+        border-bottom: 1px solid #F0F0F0;
+        a  {
+            @include fontStyle(14px, 600, #40A0FF);
+            @extend .flexAlignItems;
+            justify-content: center;
+            svg {
+                margin-left: 10px;
+            }
+            &:hover {
+                color: #4378BC;
+                svg {
+                    opacity: 1;
+                }
+            }
+        }
+        &:last-child {
+            padding: 21px 10px 20px;
+        }
+    }
+}

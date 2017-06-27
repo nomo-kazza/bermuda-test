@@ -1,0 +1,123 @@
+/* body area style */
+.parameters-container {
+    background-color: $app-body-bg-color;
+    padding: 20px 0 60px;
+    @media (min-width: 768px) and (max-width: 1359px) {
+        padding: 20px 25px;
+        position: relative;
+        top: 400px;
+        overflow-y: auto;
+    }
+    .inner-parameters {
+        @include fixedContent(1210px);
+    }
+}
+/*-- media 768px to 1359px ---*/
+@media (min-width: 768px) and (max-width: 1359px) {
+    .inner-parameters {
+        display: flex;
+        .sensitivity-col {
+            flex: 1;
+        }
+        .parameters-col {
+            flex: 1;
+            .params-list {
+                flex-direction: column;
+            }
+            .separator-line {
+                display: flex;
+                margin: 12px 35px 17px;
+                height: 1px;
+                background-color: #E2E2E2;
+            }
+        }
+        #operational-container {
+            border: none;
+            padding-right: 0;
+        }
+        #operational-success-container {
+            padding-left: 0;
+            position: relative;
+        }
+        .tactical-strategical-row {
+            flex-direction: column;
+            padding-top: 0;
+            .params-card {
+                margin-top: 20px;
+            }
+            .params-card:last-child,
+            .params-card:first-child {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        .restore-default-btn {
+            text-align: right;
+            margin: 35px 0 40px 35px;
+        }
+        #tactical-container2 {
+            li {
+                &.active {
+                    &:after {
+                        left: -44px;
+                    }
+                }
+            }
+        }
+        .legend {
+            color: rgba(101, 101, 101, 0.5);
+            text-transform: uppercase;
+            font-size: 12px;
+            text-align: center;
+        }
+        .sensitivity-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 40px;
+            h3 {
+                @include fontStyle(14px, 600, $app-dark-grey);
+                text-transform: uppercase;
+            }
+            .close-sensitivity-btn {
+                @include fontStyle(14px, 600, rgba(0, 127, 255, 0.75));
+                &:hover {
+                    color: rgba(0, 127, 255, 1);
+                }
+
+            }
+        }
+        li.active {
+            .param-slider {
+                position: relative;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        .param-slider {
+            position: relative;
+            .slider {
+                .noUi-handle {
+                    // background-color: #b2b2b2;
+                }
+            }
+        }
+        .automate-checkbox {
+            input[type="checkbox"] + label span:after{
+                background-color: #b2b2b2;
+            }
+        }
+        .params-list li.active {
+            position: relative;
+            .before {
+                position: absolute;
+                top: 15px;
+                left: 10px;
+                width: 15px;
+                height: 3px;
+                background-color: #B2B2B2;
+            }
+        }
+    }
+}

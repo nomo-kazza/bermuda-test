@@ -1,0 +1,253 @@
+/* compare header */
+.graphs-tab-nav.compare-graphs {
+    .text {
+        padding: 9px 10px 10px;
+        svg {
+            margin-left: 10px;
+            position: relative;
+            top: -2px;
+            transition: all 0.2s linear;
+        }
+        &:hover {
+            svg {
+                opacity: 1;
+            }
+        }
+    }
+    li.outer {
+        padding: 14px 18px;
+        @media only screen and (min-width: 768px) and (max-width: 1359px) {
+            padding: 14px 0px;
+        }
+        > a {
+            opacity: 1;
+            border-radius: 14px;
+            &:hover {
+                background-color: #639EB4;
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &.active {
+            .text {
+                border-bottom: none;
+            }
+            > a {
+                background-color: #639EB4;
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &:nth-child(2) {
+            padding: 0;
+        }
+    }
+    .compare-icon-container {
+        svg {
+            position: relative;
+            left: 2px;
+        }
+    }
+}
+/*  compare btn */
+.header-right {
+    .compare-btn.yellow {
+        text-transform: uppercase;
+        @include fontStyle(13px, 600, $app-white);
+        width: 133px;
+        height: 30px;
+        background-color: rgba(255, 216, 0, 0.5);
+        padding: 0;
+        @extend .flexAlignItems;
+        justify-content: center;
+        border-radius: 13px;
+        span {
+            display: flex;
+            padding: 0 7px 0 10px;
+        }
+    }
+}
+.compare-content {
+    .top-chart-area .inner-top-chart-area {
+        justify-content: center;
+        padding-top: 25px;
+        padding-top: 30px;
+        @media (min-width: 768px) and (max-width: 1359px) {
+            padding-top: 15px;
+            position: relative;
+        }
+    }
+    /* left-chart-container */
+    .left-chart-container {
+        align-self: flex-end;
+        position: relative;
+        flex: 1;
+        @media (min-width: 768px) and (max-width: 1359px) {
+            min-height: 292px;
+            position: static;
+            .save-pdf-container {
+                left: 35px;
+            }
+        }
+    }
+    /* right-chart-container */
+    .right-chart-container {
+        align-self: flex-start;
+        position: relative;
+        flex: 1;
+        @media (min-width: 768px) and (max-width: 1359px) {
+            min-height: 292px;
+        }
+    }
+    .center-gauge-chart-container {
+        justify-content: center;
+        display: none;
+        padding-bottom: 8px;
+        &.active {
+            display: flex;
+        }
+        @media (min-width: 768px) and (max-width: 1359px) {
+            min-width: auto;
+        }
+    }
+    .right-table-container {
+        max-width: 415px;
+        margin: 0 auto;
+        padding-right: 37px;
+        display: none;
+        padding-bottom: 4px;
+        @media (min-width: 768px) and (max-width: 1000px) {
+            min-width: 315px;
+            padding-right: 0;
+        }
+        @media (min-width: 1001px) and (max-width: 1359px) {
+            min-width: 400px;
+            padding: 0 15px;
+        }
+        &.active {
+            display: block;
+        }
+    }
+    #line-chart-container-graph .line-indicator {
+        opacity: 1;
+    }
+    .left-chart-container .circle_line-indicator {
+        opacity: 1;
+    }
+}
+
+/* center-btns-container */
+.center-btns-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    top: 15px;
+    @media (min-width: 768px) and (max-width: 1359px) {
+       margin: 0 10px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &:after {
+        content: '';
+        height: 163px;
+        width: 1px;
+        background-color: $app-white;
+        position: absolute;
+        left: 50%;
+        top: 46%;
+        @media (min-width: 768px) and (max-width: 1359px) {
+            height: 177px;
+        }
+    }
+    &:before {
+        content: '';
+        height: 34px;
+        width: 1px;
+        background-color: $app-white;
+        position: absolute;
+        left: 50%;
+        top: -45px;
+        @media (min-width: 768px) and (max-width: 1359px) {
+            top: -30px;
+            height: 25px;
+        }
+    }
+    li {
+        position: relative;
+        margin: 5px;
+        a {
+            @include fontStyle(13px, 600, rgba(255, 255, 255, 0.5));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 77px;
+            height: 32px;
+            border-radius: 14px;
+            background-color: transparent;
+            position: relative;
+            box-sizing: border-box;
+            z-index: 1;
+            @media (min-width: 768px) and (max-width: 1359px) {
+                width: 65px;
+            }
+        }
+        span {
+            width: 100%;
+            height: 100%;
+            border-radius: 14px;
+            display: block;
+            background-color: rgba(92, 118, 118, 0.25);
+            mix-blend-mode: multiply;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &.active, &:hover {
+            a {
+                color: $app-white;
+                border: 1px solid $app-white;
+            }
+        }
+    }
+}
+
+/* save-pdf-container */
+.save-pdf-container {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    @media (min-width: 768px) and (max-width: 1359px) {
+        bottom: -20px;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    a {
+        @include fontStyle(13px, 600, rgba(255, 255, 255, 0.5));
+        @extend .flexAlignItems;
+        justify-content: flex-end;
+        text-transform: uppercase;
+        svg {
+            margin-left: 12px;
+        }
+        &.save-btn {
+            margin-bottom: 25px;
+            @media (min-width: 768px) and (max-width: 1359px) {
+                margin-bottom: 0;
+                margin-right: 25px;
+            }
+        }
+        &:hover {
+            color: $app-white;
+            svg {
+                opacity: 1;
+            }
+        }
+    }
+}

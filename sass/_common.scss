@@ -1,0 +1,39 @@
+@mixin backgroundImg($imgpath, $width, $height, $position: 0 0) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: no-repeat;
+    };
+    width: $width;
+    height: $height;
+}
+
+@mixin fontStyle($size, $weight, $color, $style: normal) {
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    color: $color;
+}
+@mixin fixedContent($width) {
+    max-width: $width;
+    margin: 0 auto;
+}
+.flexAlignItems {
+    display: flex;
+    align-items: center;
+}
+.tablet-only {
+    display: none;
+}
+.desk-only {
+    display: flex;
+}
+
+@media (min-width: 768px) and (max-width: 1359px) {
+    .tablet-only {
+        display: flex;
+    }
+    .desk-only {
+        display: none;
+    }
+}

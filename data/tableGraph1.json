@@ -1,0 +1,241 @@
+
+{
+    "tables": [{
+        "tableName": "table1",
+        "parameters": [
+            {
+            "id": 1,
+            "name": "Total Costs",
+            "color": "#fff",
+            "day365": "16.89 M",
+            "day1000": "23.4 M",
+            "hasRadio": true,
+            "delta": "3.13 M"
+        },
+        {
+            "id": 2,
+            "name": "Engine Installs",
+            "color": "#77FF00",
+            "day365": "3.748 M",
+            "day1000": "5.011 M",
+            "hasRadio": true,
+            "delta": "0.12 M"
+        },
+        {
+            "id": 3,
+            "name": "Generators",
+            "color": "007FFF",
+            "day365": "7.837 M",
+            "day1000": "11.31 M",
+            "hasRadio": true,
+            "delta": "1.21 M"
+        },
+        {
+            "id": 4,
+            "name": "Wiring & Linings",
+            "color": "rgba(255,255,255,0.5)",
+            "day365": "1.331 M",
+            "day1000": "1.331 M",
+            "hasRadio": true,
+            "delta": "0.11 M"
+        },
+        {
+            "id": 5,
+            "name": "Endowments",
+            "color": "#FF15AB",
+            "day365": "1.266 M",
+            "day1000": "1.899 M",
+            "hasRadio": true,
+            "delta": "0.20 M"
+        },
+        {
+            "id": 6,
+            "name": "QC",
+            "color": "#00E7FF",
+            "day365": "1.58 M",
+            "day1000": "2.261 M",
+            "hasRadio": true,
+            "delta": "0.10 M"
+        },
+        {
+            "id": 7,
+            "name": "Painting",
+            "color": "",
+            "day365": "481,700",
+            "day1000": "656,000",
+            "hasRadio": false,
+            "delta": "25,000"
+        },
+        {
+            "id": 8,
+            "name": "Interior Detailing",
+            "color": "",
+            "day365": "650.500",
+            "day1000": "931.200",
+            "hasRadio": false,
+            "delta": "45.200"
+        }]
+    },
+    {
+        "tableName": "table2",
+        "parameters": [
+            {
+            "id": 9,
+            "name": "Total Costs 2",
+            "color": "#fff",
+            "day365": "16.89 M",
+            "day1000": "23.4 M",
+            "hasRadio": true,
+            "delta": "3.13 M"
+        },
+        {
+            "id": 10,
+            "name": "Engine Installs 2",
+            "color": "#77FF00",
+            "day365": "3.748 M",
+            "day1000": "5.011 M",
+            "hasRadio": true,
+            "delta": "0.12 M"
+        },
+        {
+            "id": 11,
+            "name": "Generators 2",
+            "color": "007FFF",
+            "day365": "7.837 M",
+            "day1000": "11.31 M",
+            "hasRadio": true,
+            "delta": "1.21 M"
+        },
+        {
+            "id": 12,
+            "name": "Wiring & Linings",
+            "color": "rgba(255,255,255,0.5)",
+            "day365": "1.331 M",
+            "day1000": "1.331 M",
+            "hasRadio": true,
+            "delta": "0.11 M"
+        },
+        {
+            "id": 13,
+            "name": "Endowments",
+            "color": "#FF15AB",
+            "day365": "1.266 M",
+            "day1000": "1.899 M",
+            "hasRadio": true,
+            "delta": "0.20 M"
+        },
+        {
+            "id": 14,
+            "name": "QC",
+            "color": "#00E7FF",
+            "day365": "1.58 M",
+            "day1000": "2.261 M",
+            "hasRadio": true,
+            "delta": "0.10 M"
+        },
+        {
+            "id": 15,
+            "name": "Painting",
+            "color": "",
+            "day365": "481,700",
+            "day1000": "656,000",
+            "hasRadio": false,
+            "delta": "25,000"
+        },
+        {
+            "id": 16,
+            "name": "Interior Detailing",
+            "color": "",
+            "day365": "650.500",
+            "day1000": "931.200",
+            "hasRadio": false,
+            "delta": "45.200"
+        }]
+    },
+    {
+        "tableName": "table3",
+        "parameters": [
+            {
+            "id": 17,
+            "name": "Total Costs 3",
+            "color": "#fff",
+            "day365": "16.89 M",
+            "day1000": "23.4 M",
+            "hasRadio": true,
+            "delta": "3.13 M"
+        },
+        {
+            "id": 18,
+            "name": "Engine Installs 3",
+            "color": "#77FF00",
+            "day365": "3.748 M",
+            "day1000": "5.011 M",
+            "hasRadio": true,
+            "delta": "0.12 M"
+        },
+        {
+            "id": 19,
+            "name": "Generators",
+            "color": "007FFF",
+            "day365": "7.837 M",
+            "day1000": "11.31 M",
+            "hasRadio": true,
+            "delta": "1.21 M"
+        },
+        {
+            "id": 20,
+            "name": "Wiring & Linings",
+            "color": "rgba(255,255,255,0.5)",
+            "day365": "1.331 M",
+            "day1000": "1.331 M",
+            "hasRadio": true,
+            "delta": "0.11 M"
+        },
+        {
+            "id": 21,
+            "name": "Endowments",
+            "color": "#FF15AB",
+            "day365": "1.266 M",
+            "day1000": "1.899 M",
+            "hasRadio": true,
+            "delta": "0.20 M"
+        },
+        {
+            "id": 22,
+            "name": "QC",
+            "color": "#00E7FF",
+            "day365": "1.58 M",
+            "day1000": "2.261 M",
+            "hasRadio": true,
+            "delta": "0.10 M"
+        },
+        {
+            "id": 23,
+            "name": "Painting",
+            "day365": "481,700",
+            "day1000": "656,000",
+            "hasRadio": false,
+            "delta": "25,000"
+        },
+        {
+            "id": 24,
+            "name": "Interior Detailing",
+            "day365": "650.500",
+            "day1000": "931.200",
+            "hasRadio": false,
+            "delta": "45.200"
+        }]
+    }]
+}
+
+
+
+
+
+
+
+
+
+
+
+

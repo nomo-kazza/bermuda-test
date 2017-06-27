@@ -1,0 +1,28 @@
+{
+    "parameters": [
+        {
+            "name": "total",
+            "label": "Total Costs",
+            "costs": 20.56,
+            "color": "#fff"
+        },
+        {
+            "name": "engine",
+            "label": "Engine Installs",
+            "costs": 4.98,
+            "color": "#77FF00"
+        },
+        {
+            "name": "generators",
+            "label": "Generators",
+            "costs": 10.11,
+            "color": "#3F9FFF"
+        },
+        {
+            "name": "qc",
+            "label": "QC",
+            "costs": 2.12,
+            "color": "#00E7FF"
+        }
+    ]
+}

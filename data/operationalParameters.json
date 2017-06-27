@@ -1,0 +1,105 @@
+{
+    "parameters": [
+        {
+            "id": 1,
+            "paramName": "Install Cost for Lights",
+            "min": 1,
+            "max": 2,
+            "currentValue": 2.37
+        },
+        {
+            "id": 2,
+            "paramName": "Cost per Back Seat Install",
+            "min": 0,
+            "max": 0.5,
+            "currentValue": 0.28,
+            "hasHoldValue": 0.2
+        },
+        {
+            "id": 3,
+            "paramName": "Cost per Tire",
+            "min": 1,
+            "max": 4,
+            "currentValue": 2.69,
+            "hasHoldValue": 3.0
+        },
+        {
+            "id": 4,
+            "paramName": "Engine Install Cost",
+            "min": 0,
+            "max": 1,
+            "currentValue": 0.0858
+        },
+        {
+            "id": 5,
+            "paramName": "QC Cos",
+            "min": 0,
+            "max": 1,
+            "currentValue": 0.68
+        },
+        {
+            "id": 6,
+            "paramName": "Cost Per Spark Plug",
+            "min": 0,
+            "max": 0.5,
+            "currentValue": 0.17,
+            "hasHoldValue": 0.3
+        },
+        {
+            "id": 7,
+            "paramName": "Automate",
+            "isToggle": true,
+            "currentValue": false
+        },
+        {
+            "id": 8,
+            "paramName": "Painting Success Rate",
+            "min": 0,
+            "max": 100,
+            "currentValue": 75
+        },
+        {
+            "id": 9,
+            "paramName": "Wheel Assembly Success",
+            "min": 0,
+            "max": 100,
+            "currentValue": 80
+        },
+        {
+            "id": 10,
+            "paramName": "Induction Success Rate",
+            "min": 0,
+            "max": 100,
+            "currentValue": 13
+        },
+        {
+            "id": 11,
+            "paramName": "Supply Chain Success",
+            "min": 0,
+            "max": 100,
+            "currentValue": 60
+        },
+        {
+            "id": 12,
+            "paramName": "Break Lining Success Rate",
+            "min": 0,
+            "max": 100,
+            "currentValue": 20
+        },
+        {
+            "id": 13,
+            "paramName": "Fuel Ignition Success Rate",
+            "min": 0,
+            "max": 100,
+            "currentValue": 45
+        },
+        {
+            "id": 14,
+            "paramName": "Tests Per Plug Success",
+            "min": 0,
+            "max": 100,
+            "currentValue": 20
+        }
+
+    ]
+}

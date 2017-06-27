@@ -1,0 +1,214 @@
+.compare-page {
+    /* style for header */
+    .bermuda-header {
+        background-color: #328CA5;
+        width: 100%;
+        @media only screen and (min-width: 768px) and (max-width: 1359px) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+        }
+        header {
+            width: 100%;
+            position: relative;
+            .inner-header {
+                @include fixedContent(1210px);
+                @media only screen and (min-width: 768px) and (max-width: 1359px) {
+                    padding: 0 35px;
+                }
+            }
+            nav {
+                z-index: 8;
+                position: relative;
+            }
+            .bg-blend {
+                width: 100%;
+                height: 100%;
+                display: block;
+                background-color: rgba(92, 118, 118, 0.25);
+                mix-blend-mode: multiply;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    }
+    /* inner header */
+    .inner-header {
+        @extend .flexAlignItems;
+        .brmda-title {
+            text-transform: uppercase;
+            @include fontStyle(17px, 600, $app-white);
+            width: 26%;
+            /*-- media 768px to 1359px ---*/
+            @media (min-width: 768px) and (max-width: 1359px) {
+                width: 15%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .undo-redo {
+            @extend .flexAlignItems;
+            width: 4%;
+            @media (min-width: 768px) and (max-width: 1359px) {
+                width: 10%;
+            }
+            .undo-icon,
+            .redo-icon {
+                margin: 0 15px;
+                position: relative;
+            }
+            .undo-icon:after {
+                display: none;
+                border-right: 1px solid rgba(255, 255, 255, 0.5);
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 25px;
+                right: -15px;
+                top: -4px;
+            }
+            .undo-icon:hover {
+                svg {
+                    opacity: 1;
+                }
+            }
+            .redo-icon:hover {
+                svg {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    /* graphs-tab-nav */
+    .graphs-tab-nav {
+        @extend .flexAlignItems;
+        flex: 1;
+        width: 40%;
+        justify-content: center;
+        .bg-overlay {
+            z-index: 2;
+        }
+        @media (min-width: 768px) and (max-width: 1359px) {
+            width: 50%;
+            justify-content: center;
+        }
+        ul {
+            @extend .flexAlignItems;
+            padding: 0 20px;
+            li {
+                padding: 0 8px;
+                position: relative;
+                @extend .flexAlignItems;
+                a {
+                    @extend .flexAlignItems;
+                }
+                .text {
+                    @include fontStyle(13px, 600, $app-white);
+                    opacity: 0.5;
+                    padding: 10px 20px 9px;
+                    text-transform: uppercase;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                .remove-graph-icon {
+                    fill: $app-white;
+                    &:hover {
+                        svg {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &.active {
+                    z-index: 9;
+                    .text {
+                        opacity: 1;
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+            }
+
+        }
+        .graph-add-icon {
+            @extend .flexAlignItems;
+            padding: 0 5px;
+            svg {
+                path {
+                    fill: $app-white;
+                }
+                rect {
+                    stroke: $app-white;
+                }
+            }
+            &:hover {
+                svg {
+                    opacity: 1;
+                }
+            }
+        }
+        .graph-menu-container {
+            display: flex;
+        }
+
+        /*-- media 768px to 1359px ---*/
+        // @media (min-width: 768px) and (max-width: 1359px) {
+        // }
+    }
+    /* header-right */
+    .header-right {
+        @extend .flexAlignItems;
+        width: 30%;
+        justify-content: flex-end;
+        @media (min-width: 768px) and (max-width: 1359px) {
+            width: 25%;
+            justify-content: flex-end;
+        }
+        .actions-selector {
+            @extend .flexAlignItems;
+            padding: 10px 12px;
+            border-radius: 16px;
+            text-transform: uppercase;
+            .action-text {
+                @include fontStyle(13px, 600, $app-white);
+                opacity: 0.5;
+                padding-right: 12px;
+            }
+            .down-arrow-icon {
+                display: flex;
+            }
+            &:hover, &.active {
+                background-color: #639EB4;
+                .down-arrow-icon {
+                    svg {
+                        opacity: 1;
+                        transform: rotate(180deg);
+                        transition: all 0.2s linear;
+                    }
+                }
+                .action-text {
+                    opacity: 1;
+                }
+            }
+        }
+        .compare-btn {
+            @extend .flexAlignItems;
+            padding-left: 30px;
+            &:hover {
+                svg {
+                    opacity: 1;
+                }
+            }
+            /*-- media 768px to 1359px ---*/
+            // @media (min-width: 768px) and (max-width: 1359px) {
+            // }
+        }
+    }
+
+
+}

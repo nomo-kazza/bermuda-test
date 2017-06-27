@@ -1,0 +1,337 @@
+.dashboard-page {
+    /* style for header */
+    .bermuda-header {
+        background-color: #328CA5;
+        width: 100%;
+        @media only screen and (min-width: 768px) and (max-width: 1359px) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+        }
+        header {
+            width: 100%;
+            position: relative;
+            .inner-header {
+                @include fixedContent(1210px);
+                min-height: 60px;
+                @media only screen and (min-width: 768px) and (max-width: 1359px) {
+                    max-width: 100%;
+                    min-height: 60px;
+                    padding: 0 35px;
+                    .header-right {
+                        flex: 1;
+                        justify-content: flex-end;
+                        transform: translateX(9px);
+                    }
+                }
+            }
+            nav {
+                z-index: 8;
+                position: relative;
+            }
+            .bg-blend {
+                width: 100%;
+                height: 100%;
+                display: block;
+                background-color: rgba(92, 118, 118, 0.25);
+                mix-blend-mode: multiply;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    }
+    /* inner header */
+    .inner-header {
+        @extend .flexAlignItems;
+        .brmda-title {
+            text-transform: uppercase;
+            @include fontStyle(17px, 600, $app-white);
+            width: 27%;
+            /*-- media 768px to 1359px ---*/
+            @media (min-width: 768px) and (max-width: 1359px) {
+                width: 40%
+            }
+        }
+        .undo-redo {
+            @extend .flexAlignItems;
+            .undo-icon,
+            .redo-icon {
+                margin: 0 15px;
+                position: relative;
+            }
+            .undo-icon:after {
+                display: none;
+                border-right: 1px solid rgba(255, 255, 255, 0.5);
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 25px;
+                right: -15px;
+                top: -4px;
+            }
+            .undo-icon:hover {
+                svg {
+                    opacity: 1;
+                }
+            }
+            .redo-icon:hover {
+                svg {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    /* graphs-tab-nav */
+    .graphs-tab-nav {
+        @extend .flexAlignItems;
+        flex: 1;
+        ul {
+            @extend .flexAlignItems;
+            padding: 0 20px;
+            li {
+                padding: 0 8px;
+                position: relative;
+                @extend .flexAlignItems;
+                a {
+                    @extend .flexAlignItems;
+                }
+                .text {
+                    @include fontStyle(13px, 600, $app-white);
+                    opacity: 0.5;
+                    padding: 23px 20px 22px;
+                    text-transform: uppercase;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                .remove-graph-icon {
+                    fill: $app-white;
+                    &:hover {
+                        svg {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &.active {
+                    .text {
+                        opacity: 1;
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+            }
+            /*-- media 768px to 1359px ---*/
+            @media (min-width: 768px) and (max-width: 1359px) {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0;
+                li {
+                    width: 100%;
+                    padding: 0;
+                    border-bottom: 1px solid #F0F0F0;
+                    .text {
+                        @include fontStyle(13px, 600, $app-dark-grey);
+                        padding: 23px 44px 22px 25px;
+                        text-transform: uppercase;
+                        opacity: 1;
+                        font-size: 14px;
+                    }
+                    .remove-graph-icon {
+                        fill: $app-light-blue;
+                        transform: scale(1.5);
+                        &:hover {
+                            svg {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &.active {
+                        .text {
+                            opacity: 1;
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+            /*-- media 768px to 1359px end ---*/
+        }
+        .graph-add-icon {
+            @extend .flexAlignItems;
+            padding: 0 5px;
+            svg {
+                path {
+                    fill: $app-white;
+                }
+                rect {
+                    stroke: $app-white;
+                }
+            }
+            &:hover {
+                svg {
+                    opacity: 1;
+                }
+            }
+        }
+        .graph-menu-container {
+            display: flex;
+            /*-- media 768px to 1359px ---*/
+            @media (min-width: 768px) and (max-width: 1359px) {
+                &.show-g-menu {
+                    display: block;
+                }
+            }
+        }
+
+        /*-- media 768px to 1359px ---*/
+        @media (min-width: 768px) and (max-width: 1359px) {
+            display: flex;
+            flex-direction: column;
+            flex: 0;
+            position: relative;
+            min-width: 120px;
+            align-items: flex-start;
+            margin-left: 30px;
+            .selected-graph {
+                padding: 0;
+                position: relative;
+                display: flex;
+                align-items: center;
+                height: 32px;
+                width: 102px;
+                border-radius: 13px;
+                &.active, &:hover {
+                    background-color: #639EB4;
+                    border-radius: 13px;
+                    .down-arrow-icon {
+                        transform: rotate(180deg);
+                    }
+                }
+                &:after {
+                    content: '';
+                    width: 83px;
+                    height: 2px;
+                    background-color: $app-white;
+                    position: absolute;
+                    top: 44px;
+                    left: 10px;
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                }
+                .text {
+                    @include fontStyle(13px, 600, $app-white);
+                    opacity: 0.5;
+                    padding: 23px 12px 22px;
+                    text-transform: uppercase;
+                    opacity: 1;
+                }
+                .remove-graph-icon {
+                    fill: $app-white;
+                    transform: scale(1.5);
+                    &:hover {
+                        svg {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &.active {
+                    .text {
+                        opacity: 1;
+                        border-bottom: none;
+                    }
+                }
+            }
+            .graph-menu-container {
+                flex-direction: column;
+                position: absolute;
+                top: 44px;
+                left: 0;
+                width: 156px;
+                background: $app-white;
+                z-index: 99;
+                display: none;
+            }
+            .graph-add-icon {
+                justify-content: flex-start;
+                padding: 15px 22px 18px;
+                span {
+                    @include fontStyle(13px, 600, $app-light-blue);
+                    display: flex;
+                    text-transform: uppercase;
+                    padding-left: 15px;
+                }
+                svg {
+                    path {
+                        fill: $app-light-blue;
+                    }
+                    rect {
+                        stroke: $app-light-blue;
+                    }
+                }
+                &:hover {
+                    svg {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    /* header-right */
+    .header-right {
+        @extend .flexAlignItems;
+        .actions-selector {
+            @extend .flexAlignItems;
+            padding: 10px 12px;
+            border-radius: 16px;
+            text-transform: uppercase;
+            .action-text {
+                @include fontStyle(13px, 600, $app-white);
+                opacity: 0.5;
+                padding-right: 12px;
+            }
+            .down-arrow-icon {
+                display: flex;
+            }
+            &:hover, &.active {
+                background-color: #639EB4;
+                z-index: 9;
+                position: relative;
+                .down-arrow-icon {
+                    svg {
+                        opacity: 1;
+                        transform: rotate(180deg);
+                        transition: all 0.2s linear;
+                    }
+                }
+                .action-text {
+                    opacity: 1;
+                }
+            }
+        }
+        .bg-overlay {
+            z-index: 8;
+        }
+        .compare-btn {
+            @extend .flexAlignItems;
+            padding-left: 30px;
+            &:hover {
+                svg {
+                    opacity: 1;
+                }
+            }
+            /*-- media 768px to 1359px ---*/
+            @media (min-width: 768px) and (max-width: 1359px) {
+                padding-left: 0;
+                transform: scale(0.75);
+            }
+        }
+    }
+
+
+}

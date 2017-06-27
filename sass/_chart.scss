@@ -1,0 +1,175 @@
+/* line-chart-container */
+#line-chart-container,
+#line-chart-container-graph,
+#line-chart-container-graph2 {
+    background: #328CA5;
+    padding: 0;
+    transform: translate(-15px,0);
+    @include fontStyle(13px, 400, $app-white);
+    path, line {
+        fill: none;
+        stroke: transparent;
+    }
+    path.domain {
+        stroke: transparent;
+    }
+    .tick line {
+        stroke: #fff;
+        stroke-opacity: 0.3;
+    }
+    .tick .grid-line {
+        stroke: #fff;
+        stroke-opacity: 0.1;
+    }
+    .tick .first-grid-line {
+        stroke: #BDC8C8;
+        stroke-opacity: 1;
+    }
+    .tick text {
+        fill: #fff;
+        opacity: 0.5;
+        font-size: 11px;
+    }
+    .path-line {
+        stroke-width: 2px;
+    }
+    .line-indicator {
+        stroke: rgb(255, 216, 0);
+    }
+
+}
+#line-chart-container-graph,
+#line-chart-container-graph2 {
+    transform: none;
+    text-align: center;
+    padding-right: 70px;
+    @media (min-width: 768px) and (max-width: 1359px) {
+        padding-right: 0px;
+    }
+}
+#line-chart-container-graph2 {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+#line-chart-container-graph {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+#yellow-indicator {
+    stroke: rgb(255, 216, 0);
+}
+/* .gauge-chart */
+.gauge-chart {
+    background: #328CA5;
+    padding: 15px 5px 0;
+    position: relative;
+    @media (min-width: 768px) and (max-width: 1359px) {
+        padding: 5px 5px 0;
+    }
+    svg {
+        padding: 0 25px 23px;
+        @media (min-width: 768px) and (max-width: 1359px) {
+            padding: 5px 20px 20px;
+        }
+    }
+    .bg-group {
+        mix-blend-mode: multiply;
+    }
+    #center-text {
+        fill: #fff;
+        font-size: 25px;
+        @media (min-width: 768px) and (max-width: 1359px) {
+            font-size: 19px;
+        }
+    }
+    #gauge-legend {
+        font-size: 13px;
+        fill: #fff;
+        transform: translate(0, 70px);
+        @media (min-width: 768px) and (max-width: 1359px) {
+            transform: translate(0, 55px);
+        }
+    }
+    .chnage-value {
+        display: none;
+    }
+    &.has-hold-value {
+        .chnage-value {
+            position: absolute;
+            @include fontStyle(13px, 400, #FFD800);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,30%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                margin-right: 7px;
+                padding: 0;
+                position: relative;
+                top: -1px;
+            }
+        }
+        #center-text {
+            transform: translate(0,0);
+        }
+        .triangle {
+            opacity: 1;
+        }
+    }
+}
+
+/* sensitivity chart */
+#sensitivity-chart-container {
+    background: #EDF0F0;
+    padding: 0;
+    transform: translate(-15px, 0);
+    /*-- media 768px to 1359px ---*/
+    @media (min-width: 768px) and (max-width: 1359px) {
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+#sensitivity-chart-container path, line {
+  fill: none;
+  stroke: transparent;
+}
+#sensitivity-chart-container path.area-total {
+  fill: #000;
+}
+#sensitivity-chart-container path.engine-total {
+  fill: #00f;
+}
+#sensitivity-chart-container path.genertaors-total {
+  fill: #0f0;
+}
+#sensitivity-chart-container path.domain {
+  stroke: transparent;
+}
+
+#sensitivity-chart-container .tick line {
+  stroke: #fff;
+  stroke-opacity: 1;
+}
+#sensitivity-chart-container .tick .grid-line {
+  stroke: #fff;
+  stroke-opacity: 0.25;
+}
+#sensitivity-chart-container .tick .first-grid-line {
+  stroke: #BDC8C8;
+  stroke-opacity: 1;
+}
+#sensitivity-chart-container .tick text {
+  fill: #656565;
+  opacity: 0.5;
+  font-size: 11px;
+}
+#sensitivity-chart-container .path-line {
+  stroke-width: 2px;
+}

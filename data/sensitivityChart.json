@@ -1,0 +1,925 @@
+{
+  "parameters": [
+   {
+     "id": 1,
+      "paramId": 1,
+      "name": "Install Cost for Lights",
+      "paramType": "operational",
+      "xPos": 70,
+      "yPos": 13,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 22
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 20
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 18
+        },
+        {
+          "id": 4,
+          "time": 70,
+          "cost": 13
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 10
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 5
+        }
+      ]
+    },
+   {
+     "id": 2,
+      "paramId": 2,
+      "name": "Cost per Back Seat Install",
+      "paramType": "operational",
+      "xPos": 80,
+      "yPos": 16,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 5
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 8
+        },
+        {
+          "id": 3,
+          "time": 30,
+          "cost": 15
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 14
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 16
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 20
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "paramId": 3,
+      "name": "Cost per Tire",
+      "paramType": "operational",
+      "xPos": 0,
+      "yPos": 7,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 7
+        },
+        {
+          "id": 2,
+          "time": 10,
+          "cost": 10
+        },
+        {
+          "id": 3,
+          "time": 50,
+          "cost": 14
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 17
+        },
+        {
+          "id": 5,
+          "time": 90,
+          "cost": 19
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 29
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "paramId": 4,
+      "name": "Engine Install Cost",
+      "paramType": "operational",
+      "xPos": 20,
+      "yPos": 15,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 10
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 15
+        },
+        {
+          "id": 3,
+          "time": 50,
+          "cost": 28
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 17
+        },
+        {
+          "id": 5,
+          "time": 70,
+          "cost": 22
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 19
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "paramId": 5,
+      "name": "QC Cost",
+      "paramType": "operational",
+      "xPos": 40,
+      "yPos": 6,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 20
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 30
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 6
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 17
+        },
+        {
+          "id": 5,
+          "time": 90,
+          "cost": 19
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 12
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "paramId": 6,
+      "name": "Cost Per Spark Plug",
+      "paramType": "operational",
+      "xPos": 80,
+      "yPos": 11,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 0
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 20
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 10
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 19
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 11
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 20
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "paramId": 7,
+      "name": "Automate",
+      "paramType": "operational",
+      "xPos": 60,
+      "yPos": 19,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 10
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 20
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 10
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 19
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 26
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 30
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "paramId": 8,
+      "name": "Painting Success Rate",
+      "paramType": "operational",
+      "xPos": 45,
+      "yPos": 25,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 30
+        },
+        {
+          "id": 2,
+          "time": 45,
+          "cost": 25
+        },
+        {
+          "id": 3,
+          "time": 50,
+          "cost": 10
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 13
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 11
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 20
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "paramId": 9,
+      "name": "Wheel Assembly Success",
+      "paramType": "operational",
+      "xPos": 60,
+      "yPos": 25,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 13
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 17
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 30
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 25
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 17
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 20
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "paramId": 10,
+      "name": "Induction Success Rate",
+      "paramType": "operational",
+      "xPos": 100,
+      "yPos": 19,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 20
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 17
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 11
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 5
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 12
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 19
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "paramId": 11,
+      "name": "Supply Chain Success",
+      "paramType": "operational",
+      "xPos": 80,
+      "yPos": 21,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 20
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 25
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 20
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 26
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 21
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 27
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "paramId": 12,
+      "name": "Break Lining Success Rate",
+      "paramType": "operational",
+      "xPos": 20,
+      "yPos": 13,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 15
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 13
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 11
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 8
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 9
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 10
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "paramId": 13,
+      "name": "Fuel Ignition Success Rate",
+      "paramType": "operational",
+      "xPos": 80,
+      "yPos": 7,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 5
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 10
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 15
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 10
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 7
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 5
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "paramId": 14,
+      "name": "Tests Per Plug Success",
+      "paramType": "operational",
+      "xPos": 20,
+      "yPos": 20,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 15
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 20
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 16
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 10
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 9
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 10
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "paramId": 1,
+      "name": "Annual Car Production",
+      "paramType": "tactical",
+      "xPos": 60,
+      "yPos": 17,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 10
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 20
+        },
+        {
+          "id": 3,
+          "time": 50,
+          "cost": 28
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 17
+        },
+        {
+          "id": 5,
+          "time": 70,
+          "cost": 22
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 19
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "paramId": 2,
+      "name": "Sedan Percent",
+      "paramType": "tactical",
+      "xPos": 20,
+      "yPos": 30,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 20
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 30
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 20
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 17
+        },
+        {
+          "id": 5,
+          "time": 90,
+          "cost": 19
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 12
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "paramId": 3,
+      "name": "Luxury Sedan Percent",
+      "paramType": "tactical",
+      "xPos": 60,
+      "yPos": 19,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 0
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 20
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 10
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 19
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 17
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 20
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "paramId": 4,
+      "name": "Luxury SUV Percent",
+      "paramType": "tactical",
+      "xPos": 40,
+      "yPos": 10,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 10
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 20
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 10
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 7
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 26
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 30
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "paramId": 5,
+      "name": "SUV Percent",
+      "paramType": "tactical",
+      "xPos": 40,
+      "yPos": 25,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 30
+        },
+        {
+          "id": 2,
+          "time": 40,
+          "cost": 25
+        },
+        {
+          "id": 3,
+          "time": 55,
+          "cost": 10
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 13
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 11
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 20
+        }
+      ]
+    },
+
+    {
+      "id": 20,
+      "paramId": 1,
+      "name": "Profit per Car",
+      "paramType": "strategic",
+      "xPos": 40,
+      "yPos": 30,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 13
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 17
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 30
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 28
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 27
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 29
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "paramId": 2,
+      "name": "Detroit Percent",
+      "paramType": "strategic",
+      "xPos": 100,
+      "yPos": 9,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 20
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 17
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 11
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 5
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 12
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 9
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "paramId": 3,
+      "name": "Detroit Plant P. Rate",
+      "paramType": "strategic",
+      "xPos": 80,
+      "yPos": 11,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 20
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 25
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 20
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 16
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 11
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 17
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "paramId": 4,
+      "name": "Mexico City Plant P. Rate",
+      "paramType": "strategic",
+      "xPos": 100,
+      "yPos": 30,
+      "values": [
+        {
+          "id": 1,
+          "time": 0,
+          "cost": 29
+        },
+        {
+          "id": 2,
+          "time": 20,
+          "cost": 27
+        },
+        {
+          "id": 3,
+          "time": 40,
+          "cost": 22
+        },
+        {
+          "id": 4,
+          "time": 60,
+          "cost": 20
+        },
+        {
+          "id": 5,
+          "time": 80,
+          "cost": 27
+        },
+        {
+          "id": 6,
+          "time": 100,
+          "cost": 30
+        }
+      ]
+    }
+  ]
+}

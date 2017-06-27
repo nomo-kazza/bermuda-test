@@ -1,0 +1,89 @@
+{
+    "loads": [
+        {
+            "date": "16/04/2017",
+            "time": "10:11",
+            "scenario": "Total Cost 16.89 M / 23.4 M"
+        },
+        {
+            "date": "16/04/2017",
+            "time": "10:15",
+            "scenario": "Total Cost 16.89 M / 23.4 M"
+        },
+        {
+            "date": "17/04/2017",
+            "time": "12:24",
+            "scenario": "High Probability Scenario - 16.89 M / 23.4 M"
+        },
+        {
+            "date": "17/04/2017",
+            "time": "13:48",
+            "scenario": "Low Probability Scenario - 16.89 M / 23.4 M"
+        },
+        {
+            "date": "17/04/2017",
+            "time": "15:12",
+            "scenario": "Scenario A"
+        },
+        {
+            "date": "16/04/2017",
+            "time": "10:11",
+            "scenario": "Total Cost 16.89 M / 23.4 M"
+        },
+        {
+            "date": "16/04/2017",
+            "time": "10:15",
+            "scenario": "Total Cost 16.89 M / 23.4 M"
+        },
+        {
+            "date": "17/04/2017",
+            "time": "12:24",
+            "scenario": "High Probability Scenario - 16.89 M / 23.4 M"
+        },
+        {
+            "date": "17/04/2017",
+            "time": "13:48",
+            "scenario": "Low Probability Scenario - 16.89 M / 23.4 M"
+        },
+        {
+            "date": "16/04/2017",
+            "time": "10:15",
+            "scenario": "Total Cost 16.89 M / 23.4 M"
+        },
+        {
+            "date": "17/04/2017",
+            "time": "12:24",
+            "scenario": "High Probability Scenario - 16.89 M / 23.4 M"
+        },
+        {
+            "date": "17/04/2017",
+            "time": "13:48",
+            "scenario": "Low Probability Scenario - 16.89 M / 23.4 M"
+        },
+        {
+            "date": "17/04/2017",
+            "time": "15:12",
+            "scenario": "Scenario A"
+        },
+        {
+            "date": "16/04/2017",
+            "time": "10:11",
+            "scenario": "Total Cost 16.89 M / 23.4 M"
+        },
+        {
+            "date": "16/04/2017",
+            "time": "10:15",
+            "scenario": "Total Cost 16.89 M / 23.4 M"
+        },
+        {
+            "date": "17/04/2017",
+            "time": "12:24",
+            "scenario": "High Probability Scenario - 16.89 M / 23.4 M"
+        },
+        {
+            "date": "17/04/2017",
+            "time": "13:48",
+            "scenario": "Low Probability Scenario - 16.89 M / 23.4 M"
+        }
+    ]
+}
